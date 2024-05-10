@@ -7,6 +7,7 @@ $tamaño_img = $_FILES["img"]["size"];
 
 $carpeta_destino = $_SERVER["DOCUMENT_ROOT"] . "\img\\";
 
+echo $carpeta_destino;
 //movemos imagen de dir temporal al seleccionado en el servidor
 move_uploaded_file($_FILES["img"]["tmp_name"],$carpeta_destino.$nombre_img);
 
